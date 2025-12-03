@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import {
   ArrowRight,
+  PhoneForwarded,
   Blend,
   ChartNoAxesColumn,
   CircleDot,
@@ -40,32 +41,33 @@ export const Hero = () => {
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
-          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+          <h1 className="text-foreground max-w-160 text-4xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
+            Gondor Produkcija
           </h1>
 
-          <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+          <p className="text-foreground mt-5 !text-lg leading-snug md:text-2xl">
+            Povjerite svoje poslovanje agenciji sa 18 godina iskustva u polju
+            marketinga, dizajna i web razvoja za vaš biznis.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
-            <Button asChild>
+          <div className="font-display mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
+            <Button asChild className="text-base sm:text-lg">
               <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
+                <PhoneForwarded className="size-4" />
+                Kontakt
               </a>
             </Button>
             <Button
-              variant="outline"
-              className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
+              variant="secondary"
+              className="from-background h-auto gap-2 bg-linear-to-r to-transparent sm:text-base"
               asChild
             >
               <a
-                href="https://shadcnblocks.com"
+                href="https://gondorcg.me/o-nama"
                 className="max-w-56 truncate text-start md:max-w-none"
               >
-                Built by shadcnblocks.com
-                <ArrowRight className="stroke-3" />
+                Pogledaj više o nama
+                <ArrowRight className="stroke-3 hover:transition-all" />
               </a>
             </Button>
           </div>

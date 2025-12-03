@@ -63,6 +63,8 @@
   --text-family: var(--font-inter);
   --display-weight: 600;
   --text-weight: 400;
+  --font-primary: var(--font-dm-sans);
+  --font-primary-weight: 600;
 }
 
 .dark {
@@ -169,6 +171,8 @@
   --font-text: var(--text-family);
   --font-weight-display: var(--display-weight);
   --font-weight-text: var(--text-weight);
+  --font-primary: var(--font-primary);
+  --font-weight-primary: var(--font-primary-weight);
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -223,6 +227,7 @@
   }
   h1,
   h2,
+  p,
   .font-display {
     font-family: var(--font-display);
     font-weight: var(--display-weight);
@@ -246,6 +251,10 @@
   .font-mono {
     font-family: var(--font-mono), monospace;
   }
+}
+
+p {
+  @apply text-base leading-snug font-medium sm:text-lg;
 }
 
 @layer components {

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import {
   ArrowRight,
-  PhoneForwarded,
+  ArrowUpRight,
   Blend,
   ChartNoAxesColumn,
   CircleDot,
@@ -41,33 +41,42 @@ export const Hero = () => {
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
-          <h1 className="text-foreground max-w-160 text-4xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
+          <h1 className="text-foreground max-w-160 text-4xl tracking-normal md:text-4xl lg:text-5xl xl:whitespace-nowrap">
             Gondor Produkcija
+            <span className="hidden sm:inline">
+              {" "}
+              <br /> Kompletna Marketing Usluga
+            </span>
           </h1>
 
-          <p className="text-foreground mt-5 !text-lg leading-snug md:text-2xl">
-            Povjerite svoje poslovanje agenciji sa 18 godina iskustva u polju
+          <p className="text-foreground mt-5 !text-xl/6 tracking-tight md:text-2xl">
+            Povjerite svoje poslovanje agenciji sa 20 godina iskustva u polju
             marketinga, dizajna i web razvoja za vaš biznis.
           </p>
 
           <div className="font-display mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild className="text-base sm:text-lg">
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                <PhoneForwarded className="size-4" />
+              <a
+                href="https://github.com/shadcnblocks/mainline-nextjs-template"
+                className="group inline-flex items-center gap-2"
+              >
                 Kontakt
+                <ArrowUpRight className="transition-transform duration-300 ease-out group-hover:-translate-y-1" />
               </a>
             </Button>
+
             <Button
-              variant="secondary"
-              className="from-background h-auto gap-2 bg-linear-to-r to-transparent sm:text-base"
+              className="text-base"
+              variant="outline"
+              // className="from-background h-auto gap-2 bg-linear-to-r to-transparent text-sm sm:text-lg"
               asChild
             >
               <a
                 href="https://gondorcg.me/o-nama"
-                className="max-w-56 truncate text-start md:max-w-none"
+                className="group max-w-56 truncate md:max-w-none"
               >
-                Pogledaj više o nama
-                <ArrowRight className="stroke-3 hover:transition-all" />
+                Pogledajte više o nama
+                <ArrowRight className="transition-transform duration-300 ease-out group-hover:translate-x-1" />
               </a>
             </Button>
           </div>

@@ -14,23 +14,25 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
+    title: "20 godina iskustva",
+    description: "Odgovoran pristup pri radu na domaćem i stranom tržištu.",
     icon: CircleDot,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
+    title: "Pouzdano",
+    description:
+      "Dobra i pouzdana marketing agencija postaje sve traženija usluga na svim tržištima.",
     icon: Blend,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
+    title: "Pristupačno",
+    description:
+      "Gondor Produkcija - najbolji odnos cijene i kvaliteta na domaćem tržištu.",
     icon: Diamond,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
+    title: "Stalni rast",
+    description: "Budite u krugu najboljih i radite sa najboljima.",
     icon: ChartNoAxesColumn,
   },
 ];
@@ -60,7 +62,7 @@ export const Hero = () => {
                 href="https://github.com/shadcnblocks/mainline-nextjs-template"
                 className="group inline-flex items-center gap-2"
               >
-                Kontakt
+                Kontaktirajte nas
                 <ArrowUpRight className="transition-transform duration-300 ease-out group-hover:-translate-y-1" />
               </a>
             </Button>
@@ -98,10 +100,10 @@ export const Hero = () => {
               <div key={feature.title} className="flex gap-2.5 lg:gap-5">
                 <Icon className="text-foreground mt-1 size-4 shrink-0 lg:size-5" />
                 <div>
-                  <h2 className="font-text text-foreground font-semibold">
+                  <h2 className="foreground font-display text-lg font-semibold">
                     {feature.title}
                   </h2>
-                  <p className="text-muted-foreground max-w-76 text-sm">
+                  <p className="leading/snug max-w-76 leading-snug text-gray-600 sm:!text-base">
                     {feature.description}
                   </p>
                 </div>
